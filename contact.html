@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  </head>
+  <body id="cont">
+    <nav class="ong">
+      <img src="img/Logod.png" class="logo" alt="" />
+      <div class="onglets">
+        <a href="index.html">Accueil</a>
+        <a href="cv.html">CV</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.php">Se connecter</a>
+      </div>
+    </nav>
+    <div class="container">
+      <form method="post" action="contact.php">
+        <label for="name">Prénom</label>
+        <input
+          type="text"
+          id="prenom"
+          name="prenom"
+          placeholder="Ton prénom..."
+        />
+
+        <div class="hide col" id="name">
+          Veuillez rentrer votre prenom !
+        </div>
+
+        <label for="name">Nom</label>
+        <input
+          type="text"
+          id="nom"
+          name="nom"
+          placeholder="Ton Nom..."
+        />
+
+        <div class="hide col" id="lname">
+          Veuillez rentrer votre nom !
+        </div>
+
+        <label for="mail">Adresse mail</label>
+        <input
+          type="text"
+          id="mail"
+          name="mail"
+          placeholder="Ton adresse mail..."
+        />
+
+        <div class="hide col" id="imail">
+          Veuillez rentrer votre mail !
+        </div>
+
+        <label for="subject">Sujet</label>
+          <select id="sujet" name="sujet">
+            <option value="" disabled selected value id="none" hidden>---------------</option>
+            <option value="alternance">Alternance</option>
+            <option value="suggestion">Suggestion</option>
+            <option value="question">Question</option>
+            <option value="autres">Autres</option>
+          </select>
+
+          <div class="hide col" id="subject">
+            Veuillez choisir un sujet !
+          </div>
+
+        <label for="com">Laisser un commentaire</label>
+        <textarea
+          id="com"
+          name="com"
+          placeholder="vous pouvez laisser un commentaire si vous le souhaitez.."
+          style="height: 100px"
+        ></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <footer>
+      <div class="reseaux">
+        <div class="logore"><a href="https://discord.com/users/221371104046874625" target="_blank"><img src="img/discord.png" class="ds"  alt="logo discord"></img></a></div>
+        <div class="logore"><a href="https://www.instagram.com/virgil.prvst/" target="_blank"><img src="img/insta.png" alt="logo insta"></img></a></div>
+        <div class="logore"><a href="https://www.linkedin.com/in/virgil-pr%C3%A9vost-carpentier/" target="_blank"><img src="img/linkedin.png" alt="logo linkedin"></a></img></div>
+        <div class="logore"><a href="https://github.com/ZupX1" target="_blank"><img src="img/git.png" alt="logo github"></img></a></div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
