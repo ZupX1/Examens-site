@@ -29,7 +29,6 @@ nav{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    border-bottom: 5px solid #2D2D2D;
     background-color: black;
 }
 
@@ -152,6 +151,7 @@ header h4{
 .plus{
     color:#FF6600;
     margin-top: 5vh;
+    text-align: right;
 }
 
 .left{
@@ -207,10 +207,6 @@ header h4{
     max-width: 60%;
 }
 
-hr{
-    border: 1px solid #FF6600;
-}
-
 .CV{
     max-width: 100%;
     margin: auto;
@@ -235,6 +231,10 @@ hr{
     margin-top: -1vh;
     margin-bottom: -0.5vh;
     border-radius: 15px 0px 0px 15px;
+}
+
+.left2 h1{
+    margin-top: 6vh;
 }
 
 .right2 img{
@@ -263,7 +263,7 @@ hr{
 
 .txtform{
     text-align: center;
-    margin-top: 7vh;
+    margin-top: 5vh;
 }
 
 .form{
@@ -271,12 +271,13 @@ hr{
 }
 
 .bform{
-    width: 150px;
     font-family: 'Outfit', sans-serif;
     text-transform: uppercase;
     border-radius: 10px;
-    margin-top: 7vh;
+    margin-top: 5vh;
+    padding: 9px;
     font-size: 26px;
+    font-weight: bold;
     background-color: #FF6600;
     color: white;
     border: none;
@@ -312,6 +313,117 @@ footer{
     margin-top: 5px;
 }
 
+/* CV */
+
+/* tete */
+.tetecv{
+    max-width: 45%;
+    margin: auto;
+    margin-top: 10vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+    box-shadow: inset 0px 0px 0px 1px #ffffff;
+}
+
+.hautcv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imagecv img{
+    height: 200px;
+    margin-top: 2.5vh;
+    border: 3px solid #ffffff;
+    transform: rotateY(180deg);
+    border-radius: 50%;
+}
+
+.titrecv{
+    margin-left: 5vw;
+    color: #ffffff;
+}
+
+.titrecv h1{
+    font-weight: 400;
+}
+
+.titrecv h2{
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.titrecv p{
+    font-weight: 200;
+    font-size: 12px;
+}
+
+.hrtete{
+    text-align: left;
+    border: 1px solid #ffffff;
+    width: 90%;
+    margin-right: 6vw;
+    margin-top: 2vh;
+}
+/* corps */
+
+.corpscv{
+    max-width: 45%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+
+.corpscv p{
+    margin-bottom: 3vh;
+}
+
+.datecv{
+    color: #FF6600;
+    font-weight: 300;
+}
+
+.lieucv{
+   color: #00000094;
+   font-size: 10px;
+   float: left; 
+   margin-top: -3vh;
+}
+
+.hrcorps{
+    border: 1px solid #000000;
+    width: 50%;
+    margin-left: 0;
+}
+
+.experiences ul{
+    margin-left: 3vw;
+    margin-top: -2vh;
+}
+
+.experiences ul li{
+    margin-top: 0.5vw;
+}
+
+.footercv{
+    max-width: 45%;
+    margin: auto;
+    background-color: #000000;
+    height: 7vh;
+    margin-bottom: 10vh;
+    box-shadow: inset 0px 0px 0px 1px #ffffff;
+}
+
+.corpscv div{
+    margin-left: 5vw;
+    margin-top: 1.5vh;
+}
 /* form contact */
 
 input[type=text], select, textarea {
@@ -341,6 +453,7 @@ input[type=text], select, textarea {
   .container {
     margin: auto;
     margin-top: 6.5vh;
+    margin-bottom: 11vh;
     max-width: 40%;
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -358,10 +471,6 @@ input[type=text], select, textarea {
     font-weight: 800;
   }
 
-  #cont footer{
-    position: absolute;
-    bottom: 0%;
-  }
 
 /* portfolio */
   
@@ -457,6 +566,7 @@ input[type=text], select, textarea {
     cursor: pointer;
   }
 
+
   #log footer{
     position: absolute;
     bottom: 0;
@@ -513,7 +623,6 @@ input[type=text], select, textarea {
         overflow-x: hidden; 
     }
 
-
     nav .onglets{
         margin-left: 8px;
         text-align: center;
@@ -531,10 +640,19 @@ input[type=text], select, textarea {
         border-radius: 0px;
     }
 
+    .portfolio{
+        max-width: 85%;
+    }
+
+    .CV{
+        max-width: 85%;
+    }
+
     .right img{
         height: auto ;
         width: 100%;
         border-radius: 0px;
+        border: 0;
     }
 
     .txtcv{
@@ -599,5 +717,17 @@ input[type=text], select, textarea {
       
     .content{
         align-items: center;
+    }
+
+    .tetecv{
+        max-width: 90%;
+    }
+
+    .corpscv{
+        max-width: 90%;
+    }
+
+    .footercv{
+        max-width: 90%;
     }
 }

@@ -1,0 +1,106 @@
+body {
+  height: 80vh;
+  background-color: rgb(0, 0, 0);
+  background-repeat: no-repeat;
+  color: white;
+  font-family: outfit;
+}
+
+.container {
+  width: 900px;
+  height: 600px;
+  background-image: url(../img/carte_paris.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  margin-left: 500px;
+  margin-top: 25px;
+  border-radius: 15px;
+  border-style: solid;
+  box-shadow: 0px 0px 40px 5px rgb(255 255 255 / 0.15);
+}
+
+.logo {
+  margin-left: 770px;
+  margin-top: 60px;
+}
+
+.arbres img {
+  width: 40px;
+  height: 40px;
+  color: rgb(255, 163, 26);
+}
+
+#arbre1 {
+  position: absolute;
+  left: 100px;
+  top: 340px;
+  width: auto;
+}
+
+#arbre2 {
+  position: absolute;
+  left: 188px;
+  top: 195px;
+}
+
+#arbre3 {
+  position: absolute;
+  left: 313px;
+  top: 264px;
+}
+
+#arbre4 {
+  position: absolute;
+  left: 323px;
+  top: 230px;
+}
+
+img:hover {
+  transform: scale(1.2);
+}
+
+.hidden {
+  opacity: 0%;
+  pointer-events: none;
+}
+
+.text {
+  padding: 10px;
+  border-radius: 10px;
+  display: none;
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  white-space: nowrap;
+  background-color: black;
+}
+
+.arbre:hover .text {
+  display: block;
+  z-index: 1;
+}
+
+.desc {
+  position: fixed;
+  border-radius: 10px;
+  list-style: none;
+  background-color: rgb(0, 0, 0);
+  padding: 30px;
+  width: auto;
+  z-index: 2;
+}
+
+.arbre {
+  width: auto;
+}
+
+form {
+  margin-left: 750px;
+  margin-top: -30px;
+  position: fixed;
+}

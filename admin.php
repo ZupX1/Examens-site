@@ -20,10 +20,10 @@ else
         <td scope="row"><strong>ID</strong></td>
         <td><strong>Prénom</strong></td>
         <td><strong>Nom</strong></td>
-        <td><strong>mail</strong></td>
-        <td><strong>sujet</strong></td>
-        <td><strong>message</strong></td>
-        <td><strong>date d'envoi</strong></td>
+        <td><strong>Mail</strong></td>
+        <td><strong>Sujet</strong></td>
+        <td><strong>Message</strong></td>
+        <td><strong>Date d'envoi</strong></td>
     </tr>
 
 <?php

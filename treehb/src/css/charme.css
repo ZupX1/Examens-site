@@ -1,0 +1,8 @@
+body {
+  width: auto;
+  height: 900px;
+  background-image: url(../img/charme.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
